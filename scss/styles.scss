@@ -1,0 +1,61 @@
+@import "fonts";
+@import "variables";
+@import "normalize";
+
+
+body {
+    font-family: Latio;
+    color: #424242;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+}
+
+.container {
+    max-width: 1369px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+
+    &__link {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: $header__link_color;
+    }
+
+    &__sign {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        &_link {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            color: #000;
+        }
+
+        &_button {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 25px;
+            color: #fff;
+            border-radius: 4px;
+            padding: 13px 50px;
+            background-color: $main_color;
+            margin-left: 35px;
+        }
+    }
+
+
+}
