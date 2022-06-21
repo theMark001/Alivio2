@@ -17,26 +17,32 @@ button {
 }
 
 .container {
-    max-width: 1369px;
+    max-width: 1370px;
     margin: 0 auto;
     padding: 0 15px;
 }
 
 .header {
-    display: flex;
-    align-items: center;
+    padding: 17px 0;
 
-    &__link {
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 24px;
-        color: $header__link_color;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__navigation {
+
+        &_link {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            color: $header__link_color;
+            margin-right: 70px;
+        }
     }
 
     &__sign {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
 
         &_link {
             font-weight: 400;
@@ -54,8 +60,421 @@ button {
             padding: 13px 50px;
             background-color: $main_color;
             margin-left: 35px;
+            cursor: pointer;
+        }
+    }
+}
+
+.home {
+    min-height: 895px;
+    background-image: url(../img/Home_bg.jpg);
+    background-size: cover;
+    padding-top: 175px;
+    box-sizing: border-box;
+    background-position: center;
+
+    &__text {
+
+
+        &_title {
+            font-family: 'Georgia';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 65px;
+            line-height: 74px;
+            color: $main_color;
+            margin-bottom: 30px;
+            width: 440px;
+        }
+
+        &_paragraph {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 31px;
+            color: $second_text_color;
+            margin-bottom: 60px;
+            width: 420px;
+        }
+
+        &_button {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 25px;
+            color: #fff;
+            padding: 20px 50px;
+            background-color: $main_color;
+        }
+    }
+}
+
+.steps {
+    padding-top: 170px;
+    box-sizing: border-box;
+
+    &__title {
+        font-weight: 600;
+        font-size: 24px;
+    }
+
+    &__text {
+        display: flex;
+        align-items: baseline;
+        gap: 10%;
+        margin-bottom: 50px;
+
+        &_title {
+            font-family: 'Georgia';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 157%;
+            width: 50%;
+            color: $main_color;
+            margin-top: -30px;
+        }
+
+        &_paragraph {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 150%;
+            width: 50%;
         }
     }
 
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
 
+    &__item {
+        width: 390px;
+
+        &:nth-child(2) {
+            margin-top: 280px;
+            margin-bottom: 50px;
+        }
+
+        &:nth-child(3) {
+            margin-top: 50px;
+        }
+
+        &_head {
+            position: relative;
+            padding-bottom: 55px;
+        }
+
+        &_label {
+            position: absolute;
+            top: -115px;
+            font-family: "Georgia";
+            font-weight: 400;
+            font-size: 150px;
+            color: rgba(1, 153, 109, 0.2);
+        }
+
+        &_title {
+            padding-left: 80px;
+        }
+
+        &_text {
+            font-family: "Lato";
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 150%;
+        }
+
+        &_img {
+            width: 100%;
+            border-radius: 12px;
+        }
+    }
+}
+
+.about-us {
+    background-color: $second_color;
+    padding: 230px 0 175px 0;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__text {
+        color: #fff;
+
+        &_title {
+            font-family: 'Georgia';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 157%;
+            width: 425px;
+        }
+
+        &_paragraph {
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 157%;
+            width: 380px;
+            margin-top: -35px;
+            margin-bottom: 45px;
+        }
+
+        &_button {
+            border-radius: 4px;
+            background-color: $main_color;
+            padding: 20px 50px;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 25px;
+            color: #fff;
+        }
+    }
+
+    &__video {
+        border-radius: 20px;
+        background-image: url(../img/About_us_photo.jpg);
+        width: 826px;
+        height: 516.11px;
+
+        &_container {
+            position: absolute;
+            width: 826px;
+            height: 516.11px;
+        }
+
+        &_button {
+            border-radius: 50%;
+            border: 3px solid #fff;
+            padding: 21px 19px 21px 25px;
+            position: relative;
+            display: block;
+            margin: auto;
+            margin-top: 217px;
+            background-color: transparent;
+        }
+    }
+}
+
+.about-product {
+    padding-top: 120px;
+    min-height: 936px;
+    box-sizing: border-box;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        // flex-wrap: wrap;
+        position: relative;
+    }
+
+    &__info {
+
+        
+        &_photo {
+            z-index: 1;
+            border-radius: 18px;
+            margin-left: 61px;
+        }
+
+        &_card {
+            position: absolute;
+            background-color: #fff;
+            width: 296px;
+            height: 293px;
+            box-sizing: border-box;
+            padding-top: 1px;
+            padding-bottom: 30px;
+            border-radius: 5px;
+            bottom: -75px;
+            left: 0;
+            filter: drop-shadow(0px 3.62249px 18.1125px rgba(165, 165, 165, 0.25));
+
+            &_h3 {
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14.49px;
+                line-height: 157%;
+                margin-bottom: 7px;
+                text-align: center;
+            }
+
+            &_stick {
+                width: 110px;
+                height: 1px;
+                background-color: black;
+                margin: 0 auto;
+                margin-bottom: 14px;
+            }
+
+            &_img {
+                margin-bottom: 11px;
+                margin: 0 auto;
+                display: block;
+                z-index: 2;
+            }
+
+            &_h4 {
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 11.9351px;
+                line-height: 157%;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+            &_h5 {
+                font-family: 'Georgia';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 15.9292px;
+                line-height: 157%;
+                margin-bottom: 16px;
+                text-align: center;
+
+            }
+
+            &_li {
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 10.6195px;
+                line-height: 157%;
+                margin-bottom: 16px;
+                margin-left: 35px;
+            }
+        }
+    }
+
+    &__text {
+
+        &_heading {
+            font-weight: 600;
+            font-size: 25px;
+        }
+
+        &_title {
+            font-family: 'Georgia';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 157%;
+            color: $main_color;
+            width: 584px;
+            margin-top: -15px;
+        }
+
+        &_paragraph {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 31px;
+            color: $second_text_color;
+            width: 530px;
+            margin-top: -15px;
+            margin-bottom: 40px;
+        }
+
+        &_button {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 25px;
+            color: #fff;
+            background-color: $main_color;
+            padding: 20px 50px;
+            border-radius: 4px;
+        }
+    }
+}
+
+.footer {
+    background-color: $second_color;
+    padding: 95px 0 145px;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item {
+        margin-top: 60px;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 30px;
+        color: #fff;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 1280px) {
+    .header__navigation_link {
+        margin-right: 5px;
+    }
+}
+
+@media screen and (max-width: 1285px) {
+    .steps__text {
+        flex-wrap: wrap;
+
+        &_title {
+            width: 100%;
+        }
+
+        &_paragraph {
+            width: 100%;
+        }
+    }
+
+    .steps__items {
+        flex-direction: column;
+    }
+
+    .steps__item {
+        width: 100%;
+    }
+
+    .about-us {
+        padding: 120px 0 100px;
+
+        &__video {
+            margin-top: 40px;
+            width: 100%;
+        }
+    }
+
+    .about-product__container {
+        flex-direction: column-reverse;
+        gap: 35px;
+    }
+
+    .about-product__info_photo {
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .about-product__info_card {
+        // position: relative;
+    }
+}
+
+
+@media screen and (max-width: 980px) {
+    .header__navigation {
+        display: none;
+    }
+
+    .container {
+        max-width: 950px;
+    }
+
+    .home__text {
+        margin: 0 auto;
+        width: 100%;
+    }
 }
